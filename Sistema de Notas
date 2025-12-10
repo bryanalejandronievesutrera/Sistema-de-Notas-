@@ -68,3 +68,17 @@ int main (){
     /* Paso 5: Mostrar promedio máximo y mínimo */
     printf("\nPromedio máximo: %.2f\n", maximo_prom);
     printf("Promedio mínimo: %.2f\n", minimo_prom);
+    /* Paso 6: Perfil completo de cada estudiante */
+    printf("\nPERFIL DE ESTUDIANTES:\n");
+    for (int i = 0; i < estudiantes; i++){
+        printf("\nEstudiante %d: %s\n", i + 1, nombres[i]);
+        printf("Notas: ");
+        for (int j = 0; j < 4; j++){
+            printf("%2d ", notas[i][j]);
+        }
+        printf("\nPromedio: %.2f\n", promedios[i]);
+        printf("Estado: %s\n", (promedios[i] >= 10 ? "Aprobado" : "Reprobado"));
+    }
+
+    return 0;
+}
