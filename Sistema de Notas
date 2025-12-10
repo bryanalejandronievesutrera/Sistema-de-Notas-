@@ -42,3 +42,29 @@ int main (){
         float suma = sumarNotas(notas, i, 0);
         promedios[i] = suma / 4.0;
     } 
+    /* Paso 3: Calcular máximo y mínimo */
+    float maximo_prom = promedios[0];
+    float minimo_prom = promedios[0]; 
+
+    for (int i = 1; i < estudiantes; i++){
+        if (promedios[i] > maximo_prom){
+            maximo_prom = promedios[i]; 
+        }
+        if (promedios[i] < minimo_prom){
+            minimo_prom = promedios[i];
+        }
+    } 
+
+    /* Paso 4: Mostrar quién aprobó y quién reprobó */
+    printf("\nRESULTADOS DE APROBACIÓN\n");
+    for (int i = 0; i < estudiantes; i++){
+        if(promedios[i] >= 10){
+            printf("%s (Estudiante %d): ¡Aprobó!\n", nombres[i], i + 1);
+        } else {
+            printf("%s (Estudiante %d): Reprobó\n", nombres[i], i + 1);
+        }
+    }
+
+    /* Paso 5: Mostrar promedio máximo y mínimo */
+    printf("\nPromedio máximo: %.2f\n", maximo_prom);
+    printf("Promedio mínimo: %.2f\n", minimo_prom);
