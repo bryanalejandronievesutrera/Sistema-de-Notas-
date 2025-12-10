@@ -16,3 +16,24 @@ float sumarNotas (int notas[][4], int estudiante, int j){
     }
     return notas[estudiante][j] + sumarNotas(notas, estudiante, j + 1);
 }
+int main (){
+
+    /* Paso 1: Registrar estudiantes y sus notas */
+    int estudiantes;
+    printf ("Por favor, ingrese la cantidad de estudiantes a registrar para ser evaluados: ");
+    scanf ("%d", &estudiantes);
+
+    int notas[estudiantes][4]; 
+    char nombres[estudiantes][50]; 
+    float promedios[estudiantes];
+
+    for (int i = 0; i < estudiantes; i++){ 
+        printf ("\nIngrese nombre del estudiante %d: ", i + 1);
+        scanf(" %[^\n]", nombres[i]); 
+
+        printf ("Estudiante %d\n", i + 1);
+        for (int j = 0; j < 4; j++){ 
+            printf ("Ingrese nota %d: ", j + 1);
+            scanf ("%d", &notas[i][j]); 
+        }
+    }
