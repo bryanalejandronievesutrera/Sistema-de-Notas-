@@ -9,3 +9,10 @@ El programa debe:
 
 #include <stdio.h>
 #include <string.h>
+// Función recursiva para sumar notas
+float sumarNotas (int notas[][4], int estudiante, int j){
+    if (j == 4){
+        return 0;
+    }
+    return notas[estudiante][j] + sumarNotas(notas, estudiante, j + 1);
+}
