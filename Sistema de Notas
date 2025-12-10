@@ -1,0 +1,14 @@
+/*Planteamiento del sistema: SISTEMA DE NOTAS DE UNA MATERIA (X)
+El programa debe:
+1.- Registrar estudiantes y sus notas,
+2.- Calcular promedio, máxima y mínima,
+3.- Mostrar quién aprobó y quien reprobó,
+4.- Guardar resultados en archivo,
+5.- Usar recursividad para calcular el promedio */
+
+float sumarNotas (int notas[][4], int estudiante, int j){
+    if (j == 4){
+        return 0;
+    }
+    return notas[estudiante][j] + sumarNotas(notas, estudiante, j + 1);
+}
