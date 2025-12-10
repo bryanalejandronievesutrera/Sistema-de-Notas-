@@ -1,10 +1,10 @@
 Proyecto, Lenguaje C
 
-Sistema de Notas de una Materia,
-Debe tener:
+Grupo 5: Sistema de Notas
 
-1. Registrar estudiantes y sus notas.
-2. Calcular promedio, máxima y mínima.
-3. Mostrar quién aprobó y quién reprobó.
-4. Guardar resultados en archivo.
-5. Usar recursividad para calcular el proedio
+Santiago parra     31.755.397
+Bryan Nieves       32.589.282
+Darwin Martínez    30.322.556
+Victoria Carrasco  31.447.581
+Jhoanyeli Utrera   32.435.391
+Moisés Varela      27.894.326
