@@ -1,5 +1,4 @@
 Proyecto, Lenguaje C
-
 Grupo 5: Sistema de Notas
 
 Santiago parra     31.755.397
